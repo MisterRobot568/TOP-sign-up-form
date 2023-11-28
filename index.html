@@ -19,7 +19,7 @@
             </div>
 
             <div class="sidebar-footer">
-                <h1>Photo by Halie West on Unsplash</h1>
+                <p>Photo by Halie West on Unsplash</p>
             </div>
 
         </div>
@@ -36,33 +36,37 @@
             <div class="body">
                 <h1>Let's do this!</h1>
 
-                <form action="send-data" class="all-inputs">
-                    <div class="left-inputs">
-                        <div>
+                <form action="send-data" class="all-inputs" id="all-inputs">
+
+                    <div class="top-row">
+                        <div class="input-div">
                             <p><label for="first-name">FIRST NAME</label></p>
-                            <p><input type="text" id="first-name"></p>
+                            <p><input type="text" id="first-name" required></p>
                         </div>
-                        <div>
-                            <p><label for="email">EMAIL</label></p>
-                            <p><input type="text" id="email"></p>
-                        </div>
-                        <div>
-                            <p><label for="password">PASSWORD</label></p>
-                            <p><input type="text" id="password"></p>
-                        </div>
-                    </div>
-                    <div class="right-inputs">
-                        <div>
+                        <div class="input-div">
                             <p><label for="last-name">LAST NAME</label></p>
                             <p><input type="text" id="last-name"></p>
                         </div>
-                        <div>
-                            <p><label for="phone-number">PHONE NUMBER</label></p>
-                            <p><input type="text" id="phone-number"></p>
+                    </div>
+
+                    <div class="middle-row">
+                        <div class="input-div">
+                            <p><label for="email">EMAIL</label></p>
+                            <p><input type="email" id="email" required></p>
                         </div>
-                        <div>
+                        <div class="input-div">
+                            <p><label for="phone-number">PHONE NUMBER</label></p>
+                            <p><input type="tel" id="phone-number"></p>
+                        </div>
+                    </div>
+                    <div class="bottom-row">
+                        <div class="input-div">
+                            <p><label for="password">PASSWORD</label></p>
+                            <p><input type="password" id="password" required></p>
+                        </div>
+                        <div class="input-div">
                             <p><label for="confirm-pass">CONFIRM PASSWORD</label></p>
-                            <p><input type="text" id="confirm-pass"></p>
+                            <p><input type="password" id="confirm-pass" required></p>
                         </div>
                     </div>
 
@@ -71,7 +75,8 @@
 
             </div>
             <div class="footer">
-                <h1>footer</h1>
+                <button type="submit" form="all-inputs">Create Account</button>
+                <p class="log-in-text">Already have an account? <a>Log in</a></p>
             </div>
 
         </div>
